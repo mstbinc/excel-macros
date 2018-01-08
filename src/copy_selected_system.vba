@@ -2,7 +2,7 @@ Sub CopySelectedSystem()
 Attribute MyFunction.VB_ProcData.VB_Invoke_Func = "N\n14"
 '
 ' nextTabGroup Macro
-' Takes selected worksheet and duplicates it's tab group incrementing the number
+' Takes selected worksheets and duplicates the group while incrementing the unit number
 '
 ' Keyboard Shortcut: Ctrl+Shift+N
 '

@@ -8,8 +8,18 @@ Attribute MyFunction.VB_ProcData.VB_Invoke_Func = "T\n14"
 ' Keyboard Shortcut: Ctrl+Shift+T
 '
 Dim sel As range
+Dim answer As Integer
+Dim col As String
 
-For Each c In ActiveSheet.UsedRange.Columns("E").cells
+answer = MsgBox("Select Design Column?", vbYesNo + vbQuestion, "Select Box Totals")
+
+If answer = vbYes Then
+	col = "E"
+Else
+	col = "H"
+End If
+
+For Each c In ActiveSheet.UsedRange.Columns(col).cells
     If c.Value <> "" And c.Font.Bold Then
         If sel Is Nothing Then
             Set sel = c
