@@ -18,7 +18,7 @@ Attribute MyFunction.VB_ProcData.VB_Invoke_Func = "W\n14"
     Next i
 
     ActiveWorkbook.Sheets.Add Before:=Sheets(after)
-    ActiveSheet.name = "WATER ­­­>"
+    ActiveSheet.name = "WATER --->"
     ActiveSheet.Tab.color = RGB(0, 0, 0)
     range("A:XFD").EntireColumn.Hidden = True
     range("1:1048576").EntireRow.Hidden = True

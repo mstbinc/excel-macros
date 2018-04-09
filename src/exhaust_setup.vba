@@ -24,7 +24,7 @@ Dim pages As Integer
     Next i
 
     Sheets("FANTEST").Copy Before:=Sheets(after)
-    ActiveSheet.name = "EFs"
+    ActiveSheet.name = "FANS"
     ActiveSheet.Tab.color = 2646607
 
     If (name_efs <> 6) Then
@@ -88,7 +88,7 @@ Dim pages As Integer
 
 
     Sheets("OUTLET TEST SHEET").Copy Before:=Sheets(after + 1)
-    ActiveSheet.name = "EF_INs"
+    ActiveSheet.name = "FAN INLETS"
     ActiveSheet.range("G8").Value = "EXHAUST"
     ActiveSheet.Tab.color = 2646607
 
